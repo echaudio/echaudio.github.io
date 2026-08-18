@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Echo — Composer & Sound Designer</title>
+    <title>echo audio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,6 +25,7 @@
         <div class="nav-links">
             <a href="#compositions">Compositions</a>
             <a href="#sound-design">Sound Design</a>
+            <a href="#contact">Contact</a>
         </div>
 
     </nav>
@@ -78,7 +79,7 @@
 
                 <span>01</span>
 
-                <h2>Compositions</h2>
+                <h2>compositions</h2>
 
             </div>
 
@@ -98,14 +99,16 @@
 
                         <div class="audio-content">
 
-                            <div class="audio-title">
-                                Acoustic
-                            </div>
-
-                            <audio controls>
-                                <source src="projects/acoustic.wav" type="audio/wav">
-                                Your browser does not support audio playback.
-                            </audio>
+                            <iframe
+                                class="soundcloud-embed"
+                                width="100%"
+                                height="120"
+                                scrolling="no"
+                                frameborder="no"
+                                allow="autoplay"
+                                title="Acoustic — SoundCloud player"
+                                src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fechaudio-954977057%2Felectro-melancholia&color=%23f2f2f2&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false">
+                            </iframe>
 
                         </div>
 
@@ -113,7 +116,7 @@
 
                     <div class="project-info">
 
-                        <h3>Acoustic</h3>
+                        <h3>#1</h3>
 
                         <p>Original Composition</p>
 
@@ -134,14 +137,16 @@
 
                         <div class="audio-content">
 
-                            <div class="audio-title">
-                                Platform
-                            </div>
-
-                            <audio controls>
-                                <source src="projects/platform.wav" type="audio/wav">
-                                Your browser does not support audio playback.
-                            </audio>
+                            <iframe
+                                class="soundcloud-embed"
+                                width="100%"
+                                height="120"
+                                scrolling="no"
+                                frameborder="no"
+                                allow="autoplay"
+                                title="Platform — SoundCloud player"
+                                src="https://w.soundcloud.com/player/?url=https%3A%2F%2Fsoundcloud.com%2Fechaudio-954977057%2Fdistant-warmth&color=%23f2f2f2&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=false">
+                            </iframe>
 
                         </div>
 
@@ -149,7 +154,7 @@
 
                     <div class="project-info">
 
-                        <h3>Platform</h3>
+                        <h3>#2</h3>
 
                         <p>Original Composition</p>
 
@@ -174,7 +179,7 @@
 
                 <span>02</span>
 
-                <h2>Sound Design</h2>
+                <h2>sound design</h2>
 
             </div>
 
@@ -188,16 +193,13 @@
 
                     <div class="project-media video-project">
 
-                        <video controls playsinline preload="metadata">
-
-                            <source
-                                src="projects/deadspace.soundesign.mov"
-                                type="video/quicktime"
-                            >
-
-                            Your browser does not support video playback.
-
-                        </video>
+                        <iframe
+                            src="https://www.youtube.com/embed/XVmKL_OeaQU"
+                            title="Dead Space — Sound Design"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
 
                     </div>
 
@@ -218,22 +220,19 @@
 
                     <div class="project-media video-project">
 
-                        <video controls playsinline preload="metadata">
-
-                            <source
-                                src="projects/ramile.soundredesign.mov"
-                                type="video/quicktime"
-                            >
-
-                            Your browser does not support video playback.
-
-                        </video>
+                        <iframe
+                            src="https://www.youtube.com/embed/z-ZQEEKXv0Q"
+                            title="Ramiel — Sound Design"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
 
                     </div>
 
                     <div class="project-info">
 
-                        <h3>Ramile</h3>
+                        <h3>Ramiel</h3>
 
                         <p>Sound Design / Redesign</p>
 
@@ -248,6 +247,61 @@
 
 
     </main>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-header">
+
+            <span>03</span>
+
+            <h2>let's create</h2>
+
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <p class="contact-lede">
+                    Have a project in mind? Reach out directly, or send a message below.
+                </p>
+
+                <a href="mailto:echaudio@proton.me" class="contact-email">
+                    echaudio@proton.me
+                </a>
+
+            </div>
+
+            <form
+                class="contact-form"
+                action="https://formsubmit.co/echaudio@proton.me"
+                method="POST"
+            >
+
+                <input type="hidden" name="_subject" value="New message — echo audio site">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <input type="text" name="name" placeholder="Your name" required>
+
+                <input type="email" name="email" placeholder="Your email" required>
+
+                <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+
+                <button type="submit">
+                    Send <span class="spark">✳</span>
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
 
 
     <!-- =========================
